@@ -12,10 +12,10 @@ h2 {
 }
 
 .container {
-  width: 1100px;
-  height: 99vh;
+  width: 130vh;
+  height: 70vh;
   background-size: cover;
-  border: 7px solid rgb(34, 27, 11);
+  border: 15px solid rgb(34, 27, 11);
   border-radius: 6px;
   background-color: #ebebeb;
   margin: auto;
@@ -30,7 +30,7 @@ h2 {
   gap: 50px;
 }
 h1 {
-  top: 40px;
+  top: 10px;
   position: relative;
   font-size: 40px;
   font-weight: 900;
@@ -38,30 +38,36 @@ h1 {
   padding-top: 6px;
 }
 p {
-  align-items: center;
-  padding-top: 60px;
-  font-size: large;
+  padding: 20px;
+  font-size: 20px;
 }
 .PostIt {
-  min-width: 300px;
-  height: 200px;
+  min-width: 230px;
+  height: 180px;
   position: absolute;
   border-radius: 8px;
   text-align: center;
   position: relative;
-  box-shadow: 0 4px 20px black;
+  box-shadow: 0 12px 21px black;
   overflow: auto;
   margin-top: 3%;
+
+  transition: transform 300ms;
 }
 .giallo {
-  background-color: rgb(243, 231, 179);
+  background-color: rgb(248, 241, 211);
   transform: rotate(12deg);
 }
 .verde {
-  background-color: rgb(175, 225, 228);
+  background-color: rgb(195, 227, 228);
   transform: rotate(-10deg);
 }
 .lilla {
-  background-color: rgb(242, 199, 206);
-  transform: rotate(5deg);
+  background-color: rgb(255, 197, 207);
+  transform: rotate(-2deg);
+}
+.PostIt:hover {
+  transform: scale(1.1);
+  box-shadow: 0 24px 42px black;
+  z-index: 1000;
 }
