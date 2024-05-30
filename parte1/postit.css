@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 h2 {
   margin-top: 0;
@@ -29,9 +29,16 @@ h2 {
   overflow: hidden;
 }
 h1 {
+  top: 40px;
+  position: relative;
+  font-size: 40px;
   font-weight: 900;
+  align-items: center;
+  padding-top: 6px;
 }
 p {
+  align-items: center;
+  padding-top: 60px;
   font-size: large;
 }
 .PostIt {
@@ -42,13 +49,18 @@ p {
   text-align: center;
   position: relative;
   box-shadow: 0 4px 20px black;
+  overflow: auto;
+  margin-top: 3%;
 }
 .giallo {
   background-color: rgb(243, 231, 179);
+  transform: rotate(12deg);
 }
 .verde {
   background-color: rgb(175, 225, 228);
+  transform: rotate(-12deg);
 }
 .lilla {
   background-color: rgb(242, 199, 206);
+  transform: rotate(15deg);
 }
