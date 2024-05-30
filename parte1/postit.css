@@ -52,7 +52,7 @@ p {
   text-align: center;
   position: relative;
   box-shadow: 0 12px 21px black;
-  overflow: auto;
+
   margin-top: 3%;
 
   transition: transform 300ms; /* qui gli diamo il tempo al passare del mouse  */
@@ -67,10 +67,25 @@ p {
 }
 .lilla {
   background-color: rgb(255, 197, 207);
-  transform: rotate(-2deg);
+  transform: rotate(-2deg); /* rotazione deip post-it*/
 }
+
+@keyframes cambio {
+  from {
+    transform: transleteX(0%);
+  }
+  to {
+    transform: translateX(-100);
+    transform: translate(-20px, -50px);
+    opacity: 0;
+  }
+}
+.PostIt:hover .puntina {
+  animation: cambio 2s;
+}
+
 .PostIt:hover {
   transform: scale(1.1); /* grandezza quando ci passim */
-  box-shadow: 0 24px 42px black;
+  box-shadow: 0 24px 42px black; /* qui ho messo l'ombra per dare l'idea di spessore */
   z-index: 1000; /* serve per non far andare un elemento su un altro  */
 }
