@@ -27,7 +27,6 @@ h2 {
   position: relative;
   gap: 20px;
   overflow: hidden;
-  z-index: 0;
 }
 h1 {
   font-weight: 900;
